@@ -104,7 +104,7 @@
   </style>
   <!-- <script src="./Intro/intro.js"></script> -->
   <audio id="countdown" src="./Intro/countdown10.mp3"></audio>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <title>Happy Birthday</title>
   <link rel="shortcut icon" type="image/png" href="./MyBirthday/birthdayCake.png" />
 </head>
@@ -145,17 +145,17 @@
 <script>
   $(document).ready(function () {
     var countdown = document.getElementById("countdown");
-    document.querySelector(".button").classList.add("pulse");
+        document.querySelector(".button").classList.add("pulse");
     document.querySelector(".text_today").classList.add("pulsetoday");
     document.querySelector(".text_yearOld").classList.add("pulsetoday");
     $('.countDownSecond').hide();
     $('.dateToday').hide();
     $('.yearOld').hide();
     $('.birthday').click(function () {
-      countdown.play();
+countdown.play();
       $('.birthday').hide();
       $('.dateToday').show();
-      setTimeout(function () {
+            setTimeout(function () {
         $('.dateToday').hide();
         $('.yearOld').show();
       }, 4000)
@@ -164,7 +164,7 @@
         $('.countDownSecond').show();
         $('.yearOld').hide();
       }, 8000)
-      var tik = setInterval(() => {
+            var tik = setInterval(() => {
         var lyf = document.getElementById('digit')
         lyf.classList.toggle("digit");
         if (lyf.innerText == 0) {
